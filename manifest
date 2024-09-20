@@ -1,0 +1,17 @@
+# Copyright (c) 2020 Roku, Inc. All rights reserved.
+
+# Channel Details
+title=Details Screen
+major_version=1
+minor_version=0
+build_version=1
+
+# Channel Assets
+mm_icon_focus_hd=pkg:/images/channeld_icon_raw.png
+
+# Splash Screen
+splash_bg_color=0xFFFFFF
+splash_screen_hd=pkg:/images/logo_splash.png
+
+# Resolution
+ui_resolutions=hd

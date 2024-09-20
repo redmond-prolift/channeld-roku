@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--********** Copyright 2020 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="LoginScreen" extends="Group" initialFocus="instructLabel">
+
+    <children>
+        <Poster
+            id="customLogo"
+            uri="pkg:/images/login_logo_small.png"
+            translation="[20, 30]"
+        />
+
+
+        <Group id="formGroup" layoutDirection="vert" translation="[150, 200]" width="500" height="300">
+
+            <!-- Form Header -->
+
+                <Label
+                text="Enter your Practice ID"
+                font="font:MediumBoldSystemFont"
+                horizAlign="left"
+                vertAlign="top"
+                width="280"
+                height="80"
+                color="0x000000"
+                translation="[0, 0]"
+            />
+
+            
+            <!-- Description -->
+            <Label
+                text="You can find your practice ID at the top of your dashboard."
+                font="font:SmallSystemFont"
+                horizAlign="left"
+                vertAlign="top"
+                width="350"
+                height="60"
+                color="0x000000"
+                translation="[0, 90]"
+                wrap="true"
+                numLines="3"
+            />
+
+            <!-- Text Input Field styled without images -->
+            <!-- <TextField
+                id="textInput"
+                hintText="Practice ID"
+                width="500"
+                height="60"
+                translation="[0, 170]"
+                focusedLineColor="0x000000"  
+                hintColor="0xAAAAAA"          
+                textColor="0x000000"         
+                backgroundColor="0xFFFFFF"   
+                borderColor="0xCCCCCC"        
+                borderWidth="2"               
+            /> -->
+
+            <!-- <TextEditBox 
+                id="practiceidinput"
+                width = "350" 
+                translation="[0, 170]"
+                hintText = "Practice Id" 
+                focusable="true"
+                active="true"
+            /> -->
+
+            <!-- Login Button styled without images -->
+            <Label 
+                id = "instructLabel" 
+                translation="[0, 240]"
+                horizAlign="left"
+                vertAlign="top"
+                text = "" />
+
+            <Label
+                text="Press OK to Login"
+                font="font:SmallSystemFont"
+                horizAlign="left"
+                vertAlign="top"
+                width="350"
+                height="60"
+                color="0x000000"
+                translation="[0, 240]"
+                wrap="true"
+                numLines="3"
+            />
+
+            <!-- <Button
+                id="loginButton"
+                text="Login"
+                translation="[0, 240]"
+                showFocusFootprint = "true"
+                width = "240" 
+                height = "60"
+                focusable="true"
+            /> -->
+            <!-- <Button
+                id="loginButton"
+                text="Login"
+                translation="[0, 120]"
+                width="500"
+                height="60"
+                color="0x000000"  
+                textColor="0xFFFFFF"          
+            /> -->
+        </Group>
+    </children>
+</component>
