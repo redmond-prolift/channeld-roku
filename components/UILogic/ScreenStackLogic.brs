@@ -9,8 +9,8 @@ end sub
 sub showPlaylistReadyScreen(practiceId as String)
     m.PlaylistReadyScreen = CreateObject("roSGNode", "PlaylistReadyScreen")
     m.top.backgroundUri= "pkg:/images/jordan_full.png"
+    m.practiceId = practiceId
     ShowScreen("PlaylistReady", m.PlaylistReadyScreen) ' show GridScreen
-    print "MMMDATA"; m.focusedChild
     labelNode = m.top.FindNode("practiceIdLabel")
     if labelNode <> invalid
         ' Set the text of the label
@@ -35,6 +35,7 @@ sub ShowScreen(screenName as String, node as Object)
     m.top.AppendChild(node) ' add new screen to scene
     ' show new screen
     node.visible = true
+    node.screenName = screenName
     node.SetFocus(true)
     m.screenStack.Push(node) ' add new screen to the screen stack
 
@@ -45,6 +46,7 @@ end sub
 
 sub onFocusChanged()
     focusedScreen = m.screenStack.Peek()  ' Get the current focused screen
+    screenName = m.currentScreen
     if focusedScreen <> invalid
         print "Focus changed to: "; focusedScreen
         focusedScreen.SetFocus(true)  ' Ensure the current screen is handling focus

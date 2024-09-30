@@ -22,6 +22,7 @@ sub showdialog()
     keyboarddialog.ObserveField("text", "OnTextInputChanged")
     keyboarddialog.buttons=["OK","Cancel"]
     keyboarddialog.observeField("buttonSelected","confirmSelection")
+    keyboarddialog.text = "600699"
     m.top.dialog = keyboarddialog
     keyboarddialog.SetFocus(true)
     m.cFocused=0 'initialize variable
@@ -70,10 +71,6 @@ function OnkeyEvent(key as String, press as Boolean) as Boolean
 
         if m.currentScreen = "Login"
             if key = "OK"
-                ' showPlaylistReadyScreen()
-                CloseDialog()
-                return true
-            elseif key = "up"
                 showdialog()
                 return true
             elseif key = "back"

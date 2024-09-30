@@ -3,16 +3,7 @@
 ' entry point of  MainScene
 ' Note that we need to import this file in MainScene.xml using relative path.
 sub Init()
-    print "Stored Vids"; m.contentTask.content  
-    practiceId = m.contentTask.practiceId
-    labelNode = m.top.FindNode("practiceIdLabel")
-    if labelNode <> invalid
-        ' Set the text of the label
-        labelNode.text = "Practice Id: " + practiceId
-        print "Label text set to: "; labelNode.text 
-    else
-        print "Label not found"
-    end if
+    print "Stored Vids"
 end sub
 
 

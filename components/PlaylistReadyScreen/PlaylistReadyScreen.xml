@@ -2,7 +2,10 @@
 <!--********** Copyright 2020 Roku Corp.  All Rights Reserved. **********-->
 
 <component name="PlaylistReadyScreen" extends="Group" initialFocus="instructLabel">
-
+    <interface>
+        <!-- Specifies the content for the Grid -->
+        <field id="practiceId" type="string"/>
+    </interface>
     <children>
         <Poster
             id="customLogo"
@@ -31,7 +34,7 @@
             <!-- Description -->
             <Label
                 id="practiceIdLabel"
-                text="Practice ID: ######"
+                text=""
                 font="font:SmallSystemFont"
                 horizAlign="left"
                 vertAlign="top"
