@@ -16,6 +16,7 @@ sub ShowChannelRSGScreen()
     scene = screen.CreateScene("MainScene")
     screen.Show() ' Init method in MainScene.brs is invoked
 
+    scene.signalBeacon("AppLaunchComplete")
     m.mainScene = scene
 
     ' event loop

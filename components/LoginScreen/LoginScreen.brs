@@ -19,6 +19,7 @@ sub Init()
     ' centery = (720 - examplerect.height) / 2
     ' example.translation = [ centerx, centery ]
     m.LoginScreen.SetFocus(true)
+    myScene.signalBeacon(“AppLaunchComplete”)
 end sub
 
 
